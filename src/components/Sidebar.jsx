@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const Sidebar = () => {
   return (
@@ -18,16 +19,39 @@ export const Sidebar = () => {
           </div>
 
           <div className="list-group list-group-flush">
-            <a href="#" className="list-group-item list-group-item-action bg-dark text-white">Home</a>
-            <a href="#" className="list-group-item list-group-item-action bg-dark text-white">About</a>
-            <a href="#" className="list-group-item list-group-item-action bg-dark text-white">Resume</a>
-            <a href="#" className="list-group-item list-group-item-action bg-dark text-white">Portfolio</a>
+            <NavLink
+              to={'/'}
+              className="list-group-item list-group-item-action bg-dark text-white"
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to={'/about'}
+              className="list-group-item list-group-item-action bg-dark text-white"
+            >
+              About
+            </NavLink>
+
+            <NavLink
+              to={'/resume'}
+              className="list-group-item list-group-item-action bg-dark text-white"
+            >
+              Resume
+            </NavLink>
+
+            <NavLink
+              to={'/portfolio'}
+              className="list-group-item list-group-item-action bg-dark text-white"
+            >
+              Portfolio
+            </NavLink>
           </div>
 
           <div className="contacts">
             <div className="contacts-heading text-white">
               Contact links
-    </div>
+            </div>
             <div className="contact-links">
               <ul className="markers_social">
 
@@ -60,9 +84,6 @@ export const Sidebar = () => {
             </div>
           </div>
         </div>
-
-      <div className="content">ass</div>
-
       </div>
     </>
   )
