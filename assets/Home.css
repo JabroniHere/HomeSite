@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
 .wrapper {
     display: flex;
     min-height: 100vh;
@@ -9,6 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #212529!important;
     
 }
 
@@ -25,12 +35,21 @@
     border-bottom: 4px solid #fff;
     display:inline-block;
     line-height: 1.2;
+    color: #dc3545!important;
 }
+
 
 .list-group-item {
     display: flex;
     justify-content: center;
+    padding: .5rem 1rem;
     border-bottom: 1px solid hsla(0,0%,100%,.1);
+    text-decoration: none;
+    color: #fff;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
 }
 
 .contacts-heading {
@@ -38,6 +57,7 @@
     justify-content: center;
     padding-bottom: 10px;
     border-bottom: 1px solid hsla(0,0%,100%,.1);
+    color: #fff;
 }
 
 
@@ -74,19 +94,14 @@
 }
 
 .copyright {
-    display: flex;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
-
-.copyright-text {
-    display: inline-block;
-    line-height: .1em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #dc3545!important;
     font-size: 12px;
-} 
-
-
+    color: #fff;
+}
 
 
 .hamburger {
