@@ -103,6 +103,9 @@ body {
     color: #fff;
 }
 
+.content {
+    width: 100%;
+}
 
 .hamburger {
     display: none;
@@ -137,7 +140,7 @@ body {
   }
 
 
- 
+
 
   /* Large desktops and laptops */
 @media (max-width: 1200px) {
@@ -146,15 +149,22 @@ body {
     }
 
     .sidebar {
+        display: none;
         transform: translate(-180px);
     }
+
 }
 
-
-.sidebar-toggle {
+ .sidebar-toggle {
     display: flex;
     position: absolute;
     transform: translate(0px);
     transition: .5s;
 }
 
+@media (min-width: 1201px) {
+    
+    .sidebar-toggle {
+        position: initial;
+    }
+}
