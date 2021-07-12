@@ -235,7 +235,7 @@ body {
     color: #fff;
     font-size: 25px;
     background: rgba(69, 67, 71, 0.664);
-    padding: 20px;
+    padding: 10px;
     border-radius: 4px;
 }
 
@@ -243,6 +243,12 @@ body {
     color: black;
 }
 
+@media (max-width: 440px) {
+    #typewriter {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
 
 
 .radio {
