@@ -156,7 +156,27 @@ body {
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
 
-
+  .author {
+    margin-top: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 
+      0 1px 0 #ccc, 
+      0 2px 0 #c9c9c9, 
+      0 3px 0 #bbb, 
+      0 4px 0 #b9b9b9, 
+      0 5px 0 #aaa, 
+      0 6px 1px rgba(0,0,0,.1), 
+      0 0 5px rgba(0,0,0,.1), 
+      0 1px 3px rgba(0,0,0,.3), 
+      0 3px 5px rgba(0,0,0,.2), 
+      0 5px 10px rgba(0,0,0,.25), 
+      0 10px 10px rgba(0,0,0,.2), 
+      0 20px 20px rgba(0,0,0,.15);
+}
 
 
   /* Large desktops and laptops */
@@ -169,8 +189,18 @@ body {
         position: absolute;
         transform: translate(-180px);
         transition: .5s;
+        z-index: 1;
     }
 
+    .author {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 375px) {
+    .author {
+        font-size: 40px;
+    }
 }
 
  .sidebar-active {
@@ -190,10 +220,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#typewriter {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 25px;
+    background: rgba(69, 67, 71, 0.664);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+#typewriter .Typewriter__cursor {
+    color: black;
+}
+
+
+
 .radio {
-    background-color: rgb(67, 66, 66);
+    background-color: rgb(65, 61, 61);
 }
