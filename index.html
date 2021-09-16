@@ -12,11 +12,17 @@
   <!-- Font awesome -->
   <script defer src="assets/all.js"></script>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <title>Home</title>
 </head>
 
 <body>
 
+   <!-- Wrapper -->
   <div class="wrapper">
 
     <div class="hamburger" onclick="humburgerAction(this)">
@@ -33,10 +39,10 @@
       </div>
 
       <div class="list-group">
-        <a href="#" class="list-group-item item-active">Home</a>
-        <a href="#" class="list-group-item">About</a>
-        <a href="#" class="list-group-item">Resume</a>
-        <a href="#" class="list-group-item">Portfolio</a>
+        <a href="index.html" class="list-group-item item-active">Home</a>
+        <a href="About.html" class="list-group-item">About</a>
+        <a href="Resume.html" class="list-group-item">Resume</a>
+        <a href="Portfolio.html" class="list-group-item">Portfolio</a>
       </div>
 
       <div class="contacts">
@@ -69,18 +75,27 @@
     </div>
     <!-- /#sidebar-wrapper -->
 
+
+    <!-- Content -->
     <div class="content">
       <div class="container">
         <div class="author">
-          Dmytro Abramchuk
+          <div class="name">
+            Dmytro
+          </div>
+          <div class="surname">
+            Abramchuk
+          </div>
         </div>
         <div id="typewriter"></div>  
       </div>
 
       <div class="radio" id="radiobells_container"></div>
     </div>
+    <!-- !Content -->
 
   </div>
+  <!-- !Wrapper -->
 
 
   <script>

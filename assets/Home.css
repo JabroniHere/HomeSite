@@ -7,6 +7,8 @@ body {
     --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+
+ /* Sidebar */
 .wrapper {
     display: flex;
     min-height: 100vh;
@@ -115,6 +117,17 @@ body {
     color: #fff;
 }
 
+ /* !Sidebar */
+
+
+
+
+
+
+
+
+
+/* Content */
 .content {
     width: 100%;
     background: url(../img/home-bg.jpg) no-repeat center;
@@ -122,6 +135,9 @@ body {
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: cover; /* Современные браузеры */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hamburger {
@@ -156,28 +172,20 @@ body {
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
 
-  .author {
-    margin-top: 200px;
-    text-align: center;
-    color: #fff;
-    font-size: 70px;
-    font-weight: bold;
-    font-family: Helvetica;
-    text-shadow: 
-      0 1px 0 #ccc, 
-      0 2px 0 #c9c9c9, 
-      0 3px 0 #bbb, 
-      0 4px 0 #b9b9b9, 
-      0 5px 0 #aaa, 
-      0 6px 1px rgba(0,0,0,.1), 
-      0 0 5px rgba(0,0,0,.1), 
-      0 1px 3px rgba(0,0,0,.3), 
-      0 3px 5px rgba(0,0,0,.2), 
-      0 5px 10px rgba(0,0,0,.25), 
-      0 10px 10px rgba(0,0,0,.2), 
-      0 20px 20px rgba(0,0,0,.15);
+.author {
+    margin-top: 150px;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 65px;
 }
 
+.name {
+    color: #dc3545;
+}
+
+.surname {
+    color: #fff;
+}
 
   /* Large desktops and laptops */
 @media (max-width: 1200px) {
@@ -192,16 +200,9 @@ body {
         z-index: 1;
     }
 
-    .author {
-        font-size: 60px;
-    }
 }
 
-@media (max-width: 375px) {
-    .author {
-        font-size: 40px;
-    }
-}
+
 
  .sidebar-active {
     left: 0;
@@ -216,17 +217,13 @@ body {
         position: initial;
     }
 }
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
+    margin-left: 80px;
 }
 
 
@@ -250,7 +247,8 @@ body {
     }
 }
 
-
 .radio {
     background-color: rgb(65, 61, 61);
 }
+
+/* !Content */

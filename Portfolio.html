@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/About.css" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <script defer src="assets/all.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <title>Home</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="hamburger" onclick="humburgerAction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+
+      <div class="sidebar-heading">
+        <div class="sidebar-logo">DA</div>
+      </div>
+
+      <div class="list-group">
+        <a href="index.html" class="list-group-item">Home</a>
+        <a href="About.html" class="list-group-item">About</a>
+        <a href="Resume.html" class="list-group-item">Resume</a>
+        <a href="Portfolio.html" class="list-group-item item-active">Portfolio</a>
+      </div>
+
+      <div class="contacts">
+        <div class="contacts-heading">
+          Contact links
+        </div>
+        <div class="contact-links">
+          <ul class="markers_social">
+
+            <li class="social_icons">
+              <a href="https://github.com/JabroniHere" target="_blank"><i class="fab fa-github-square social"></i></a>
+            </li>
+
+            <li class="social_icons">
+              <a href="https://discord.com/users/415110466315223041" target="_blank"><i class="fab fa-discord social"></i></i></a>
+            </li>
+
+            <li class="social_icons">
+              <a href="https://t.me/dima_1582" target="_blank"><i class="fab fa-telegram social"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+          <p>COPYRIGHT © 2021</p>
+          <p>ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Content -->
+    <div class="content">
+        <div class="container">
+     
+        </div> 
+        <div class="radio" id="radiobells_container"></div>
+    </div>
+    <!-- !Content -->
+
+    </div>
+     <!-- !Wrapper -->
+
+
+  <script>
+    function humburgerAction(x) {
+      x.classList.toggle("is-active");
+      let sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle("sidebar-active");
+    }
+  </script>
+
+<link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">var g_volume = 30; var rad_backcolor="#434242"; var rad_logo = "black"; var rad_autoplay = false; var rad_width = "responsive"; var rad_width_px = 330;var rad_stations =[['https://emgregion.hostingradio.ru:8064/moscow.europaplus.mp3','Европа плюс','europaplus'],['https://icecast228.ptspb.ru:8443/rr_128','Радио Рекорд','radiorecord'],['https://nashe1.hostingradio.ru/nashe-256','Наше радио','nashe'],['https://pub0302.101.ru:8443/stream/air/aac/64/100','Авторадио','avtoradio'],['http://ic7.101.ru:8000/a99?','Радио Energy','nrj'],['https://online.kissfm.ua/KissFM_HD','Kiss FM','kissfm'],['http://air2.radiorecord.ru:805/club_320','Record EDM','recordclub']];
+</script>
+<script type="text/javascript" src="https://www.radiobells.com/script/v2_1.js" charset="UTF-8"></script>
+
